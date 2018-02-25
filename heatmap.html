@@ -78,7 +78,7 @@
                       {lat:43.469983, lng: -80.539214},
                       {lat:43.471283, lng: -80.534947},
                       {lat:43.469129, lng: -80.535687}
-                      ];
+                    ];
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -87,139 +87,265 @@
           mapTypeId: 'satellite'
         });
 
-        var marker = new google.maps.Marker({
+        var marker1 = new google.maps.Marker({
           position: myLatLng[0],
           map: map,
           title: 'Spooky'
         });
+        marker1.addListener('click', function() {
+            infowindow1.open(map, marker1);
+          });
+          var contentString1= '<p><b>22:30</b>, Got mugged when coming back from library</p>';
+          var infowindow1 = new google.maps.InfoWindow({
+            content: contentString1
+        });
 
-        marker = new google.maps.Marker({
+        var marker2 = new google.maps.Marker({
           position: myLatLng[1],
           map: map,
           title: 'Stalked by a stranger'
         });
+        marker2.addListener('click', function() {
+            infowindow2.open(map, marker2);
+          });
+          var contentString2= '<p><b>23:20</b>, Got stalked by a stranger when coming back from SLC</p>';
+          var infowindow2 = new google.maps.InfoWindow({
+            content: contentString2
+        });
 
-        marker = new google.maps.Marker({
+        var marker3 = new google.maps.Marker({
           position: myLatLng[2],
           map: map,
           title: 'Dim-lit'
         });
+        marker3.addListener('click', function() {
+            infowindow3.open(map, marker3);
+          });
+          var contentString3= '<p><b>01:40</b>, Saw a few guys harrassing someone at midnight</p>';
+          var infowindow3 = new google.maps.InfoWindow({
+            content: contentString3
+        });
 
-        marker = new google.maps.Marker({
+        var marker4 = new google.maps.Marker({
           position: myLatLng[3],
           map: map,
           title: 'Unsafe at night'
         });
+        marker4.addListener('click', function() {
+            infowindow4.open(map, marker4);
+          });
+          var contentString4= '<p><b>00:30</b>, Got eveteased by some drunk men</p>';
+          var infowindow4 = new google.maps.InfoWindow({
+            content: contentString4
+        });
 
-        marker = new google.maps.Marker({
+        var marker5 = new google.maps.Marker({
           position: myLatLng[4],
           map: map,
           title: 'Dim-lit'
         });
+        marker5.addListener('click', function() {
+            infowindow5.open(map, marker5);
+          });
+          var contentString5= '<p><b>21:45</b>, Got pickpocketed.<br />My wallet which had my credit cards got stolen</p>';
+          var infowindow5 = new google.maps.InfoWindow({
+            content: contentString5
+        });
 
-        marker = new google.maps.Marker({
+        var marker6 = new google.maps.Marker({
           position: myLatLng[5],
           map: map,
           title: 'Robbed'
         });
+        marker6.addListener('click', function() {
+            infowindow6.open(map, marker6);
+          });
+          var contentString6= '<p><b>02:20</b>, got robbed in the morning.<br /> No one was around to help</p>';
+          var infowindow6 = new google.maps.InfoWindow({
+            content: contentString6
+        });
 
-        marker = new google.maps.Marker({
+        var marker7 = new google.maps.Marker({
           position: myLatLng[6],
           map: map,
           title: 'Deserted'
         });
+        marker7.addListener('click', function() {
+            infowindow7.open(map, marker7);
+          });
+          var contentString7= '<p><b>01:18</b>, Got bullied by some upper year undergrads when going back home</p>';
+          var infowindow7 = new google.maps.InfoWindow({
+            content: contentString7
+        });
 
-        marker = new google.maps.Marker({
+        var marker8 = new google.maps.Marker({
           position: myLatLng[7],
           map: map,
           title: 'Dim-lit'
         });
+        marker8.addListener('click', function() {
+            infowindow8.open(map, marker8);
+          });
+          var contentString8= '<p><b>03:15</b>, Saw a few guys man-handling a woman</p>';
+          var infowindow8 = new google.maps.InfoWindow({
+            content: contentString8
+        });
 
-        marker = new google.maps.Marker({
+        var marker9 = new google.maps.Marker({
           position: myLatLng[8],
           map: map,
           title: 'Spooky'
         });
+        marker9.addListener('click', function() {
+            infowindow9.open(map, marker9);
+          });
+          var contentString9= '<p><b>00:56</b>, Got mugged when going back home</p>';
+          var infowindow9 = new google.maps.InfoWindow({
+            content: contentString9
+        });
 
-        marker = new google.maps.Marker({
+        var marker10 = new google.maps.Marker({
           position: myLatLng[9],
           map: map,
           title: 'Stalked by a stranger'
         });
+        marker10.addListener('click', function() {
+            infowindow10.open(map, marker10);
+          });
+          var contentString10= '<p><b>22:40</b>, Got stalked by a stranger.<br /> No police station nearby</p>';
+          var infowindow10 = new google.maps.InfoWindow({
+            content: contentString10
+        });
 
-        marker = new google.maps.Marker({
+        var marker11 = new google.maps.Marker({
           position: myLatLng[10],
           map: map,
           title: 'Deserted'
         });
+        marker11.addListener('click', function() {
+            infowindow11.open(map, marker11);
+          });
+          var contentString11= '<p><b>23:20</b>, Heard a gunshot</p>';
+          var infowindow11 = new google.maps.InfoWindow({
+            content: contentString11
+        });
 
-        marker = new google.maps.Marker({
+        var marker12 = new google.maps.Marker({
           position: myLatLng[11],
           map: map,
           title: 'Unsafe at night'
         });
+        marker12.addListener('click', function() {
+            infowindow12.open(map, marker12);
+          });
+          var contentString12= '<p><b>02:30</b>, got mugged at night</p>';
+          var infowindow12 = new google.maps.InfoWindow({
+            content: contentString12
+        });
 
-        marker = new google.maps.Marker({
+        var marker13 = new google.maps.Marker({
           position: myLatLng[12],
           map: map,
           title: 'Reason unknown'
         });
+        marker13.addListener('click', function() {
+            infowindow13.open(map, marker13);
+          });
+          var contentString13= '<p><b></b></p>';
+          var infowindow13 = new google.maps.InfoWindow({
+            content: contentString13
+        });
 
-        marker = new google.maps.Marker({
+        var marker14 = new google.maps.Marker({
           position: myLatLng[13],
           map: map,
           title: 'Catcalled'
         });
+        marker14.addListener('click', function() {
+            infowindow14.open(map, marker14);
+          });
+          var contentString14= '<p><b>20:50</b>, Got eveteased and catcalled<br />No one around to help.</p>';
+          var infowindow14 = new google.maps.InfoWindow({
+            content: contentString14
+        });
 
-        marker = new google.maps.Marker({
+        var marker15 = new google.maps.Marker({
           position: myLatLng[14],
           map: map,
           title: 'Too many strangers at night'
         });
+        marker15.addListener('click', function() {
+            infowindow15.open(map, marker15);
+          });
+          var contentString15= '<p><b>00:20</b>, Racially abused</p>';
+          var infowindow15 = new google.maps.InfoWindow({
+            content: contentString15
+        });
 
-        marker = new google.maps.Marker({
+        var marker16 = new google.maps.Marker({
           position: myLatLng[15],
           map: map,
           title: 'Stalked by a stranger'
         });
+        marker16.addListener('click', function() {
+            infowindow16.open(map, marker16);
+          });
+          var contentString16= '<p><b>23:30</b>,Stalked and eveteased</p>';
+          var infowindow16 = new google.maps.InfoWindow({
+            content: contentString16
+        });
 
-        marker = new google.maps.Marker({
+        var marker17 = new google.maps.Marker({
           position: myLatLng[16],
           map: map,
           title: 'Dim-lit'
         });
+        marker17.addListener('click', function() {
+            infowindow17.open(map, marker17);
+          });
+          var contentString17= '<p><b>17</b>, Lonely and dimlit</p>';
+          var infowindow17 = new google.maps.InfoWindow({
+            content: contentString17
+        });
 
-        marker = new google.maps.Marker({
+        var marker18 = new google.maps.Marker({
           position: myLatLng[17],
           map: map,
           title: 'Less Populated'
         });
+        marker18.addListener('click', function() {
+            infowindow18.open(map, marker18);
+          });
+          var contentString18= '<p><b>18</b>, very sparsely populated</p>';
+          var infowindow18 = new google.maps.InfoWindow({
+            content: contentString18
+        });
 
-        marker = new google.maps.Marker({
+        var marker19 = new google.maps.Marker({
           position: myLatLng[18],
           map: map,
           title: 'Reason unknown'
         });
+        marker19.addListener('click', function() {
+            infowindow19.open(map, marker19);
+          });
+          var contentString19= '<p><b>19</b></p>';
+          var infowindow19 = new google.maps.InfoWindow({
+            content: contentString19
+        });
 
-        marker = new google.maps.Marker({
+        var marker20 = new google.maps.Marker({
           position: myLatLng[19],
           map: map,
           title: 'Overcrowding: Pickpocket'
         });
 
-        marker = new google.maps.Marker({
-          position: myLatLng[20],
-          map: map,
-          title: 'Spooky'
-        });
-
-
-          marker.addListener('click', function() {
-            infowindow.open(map, marker);
+          marker20.addListener('click', function() {
+            infowindow20.open(map, marker20);
           });
-          var contentString= '<p><b>V1 Green</b>, is safe to a certain extent </br> in the late hours of the night</p>';
-          var infowindow = new google.maps.InfoWindow({
-            content: contentString
+          var contentString20= '<p><b>20</b>, is safe to a certain extent </br> in the late hours of the night</p>';
+          var infowindow20 = new google.maps.InfoWindow({
+            content: contentString20
         });
 
         heatmap = new google.maps.visualization.HeatmapLayer({
