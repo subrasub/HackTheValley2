@@ -78,7 +78,7 @@
                       {lat:43.469983, lng: -80.539214},
                       {lat:43.471283, lng: -80.534947},
                       {lat:43.469129, lng: -80.535687}
-                    ];
+                      ];
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
@@ -87,7 +87,7 @@
           mapTypeId: 'satellite'
         });
 
-        var marker1 = new google.maps.Marker({
+         var marker1 = new google.maps.Marker({
           position: myLatLng[0],
           map: map,
           title: 'Spooky'
@@ -95,37 +95,37 @@
         marker1.addListener('click', function() {
             infowindow1.open(map, marker1);
           });
-          var contentString1= '<p><b>22:30</b>, Got mugged when coming back from library</p>';
+          var contentString1= '<p><b>Location & Time: </b>V1 Pathway, 10:45PM</br><b>Description:</b> Mugged on the way back from the library by a couple of strangers </br><b>SafeRating: </b> 4/10 </p>';
           var infowindow1 = new google.maps.InfoWindow({
             content: contentString1
         });
 
-        var marker2 = new google.maps.Marker({
+         var marker2 = new google.maps.Marker({
           position: myLatLng[1],
           map: map,
-          title: 'Stalked by a stranger'
+          title: 'Wild animals'
         });
         marker2.addListener('click', function() {
             infowindow2.open(map, marker2);
           });
-          var contentString2= '<p><b>23:20</b>, Got stalked by a stranger when coming back from SLC</p>';
+          var contentString2= '<p><b>Location & Time: </b>V1/REV connector, 1:30AM</br><b>Description:</b>Pretty spooky, with deers going around the place. </br><b>SafeRating: </b> 6/10 </p>';
           var infowindow2 = new google.maps.InfoWindow({
             content: contentString2
         });
-
+ 
         var marker3 = new google.maps.Marker({
           position: myLatLng[2],
           map: map,
-          title: 'Dim-lit'
+          title: 'Deserted'
         });
         marker3.addListener('click', function() {
             infowindow3.open(map, marker3);
           });
-          var contentString3= '<p><b>01:40</b>, Saw a few guys harrassing someone at midnight</p>';
+          var contentString3= '<p><b>Location & Time: </b>St. Jerome Parking lot, 4:50AM</br><b>Description:</b>Deserted with high chances of being robbed. </br><b>SafeRating: </b> 2/10 </p>';
           var infowindow3 = new google.maps.InfoWindow({
             content: contentString3
         });
-
+ 
         var marker4 = new google.maps.Marker({
           position: myLatLng[3],
           map: map,
@@ -134,11 +134,11 @@
         marker4.addListener('click', function() {
             infowindow4.open(map, marker4);
           });
-          var contentString4= '<p><b>00:30</b>, Got eveteased by some drunk men</p>';
+          var contentString4= '<p><b>Location & Time: </b>REV connector, 1:00AM</br><b>Description:</b>More of a scary walk through the woods, would avoid this route at night if possible. </br><b>SafeRating: </b> 1/10 </p>';
           var infowindow4 = new google.maps.InfoWindow({
             content: contentString4
         });
-
+ 
         var marker5 = new google.maps.Marker({
           position: myLatLng[4],
           map: map,
@@ -147,24 +147,24 @@
         marker5.addListener('click', function() {
             infowindow5.open(map, marker5);
           });
-          var contentString5= '<p><b>21:45</b>, Got pickpocketed.<br />My wallet which had my credit cards got stolen</p>';
+          var contentString5= '<p><b>Location & Time: </b>Columbia/V1, 5:00AM</br><b>Description:</b>Advised to avoid early in the morning.</br><b>SafeRating: </b> 1/10 </p>';
           var infowindow5 = new google.maps.InfoWindow({
             content: contentString5
         });
-
+ 
         var marker6 = new google.maps.Marker({
           position: myLatLng[5],
           map: map,
-          title: 'Robbed'
+          title: 'Unsafe'
         });
         marker6.addListener('click', function() {
             infowindow6.open(map, marker6);
           });
-          var contentString6= '<p><b>02:20</b>, got robbed in the morning.<br /> No one was around to help</p>';
+          var contentString6= '<p><b>Location & Time: </b>Columbia Lake, 10:30PM</br><b>Description:</b>No nearby go-to places for help, visit only in the mornings.</br><b>SafeRating: </b> 4/10 </p>';
           var infowindow6 = new google.maps.InfoWindow({
             content: contentString6
         });
-
+ 
         var marker7 = new google.maps.Marker({
           position: myLatLng[6],
           map: map,
@@ -173,11 +173,11 @@
         marker7.addListener('click', function() {
             infowindow7.open(map, marker7);
           });
-          var contentString7= '<p><b>01:18</b>, Got bullied by some upper year undergrads when going back home</p>';
+          var contentString7= '<p><b>Location & Time: </b>Parking Lot, 6:30AM</br><b>Description:</b>Reasons not specified </br><b>SafeRating: </b> 6/10 </p>';
           var infowindow7 = new google.maps.InfoWindow({
             content: contentString7
         });
-
+ 
         var marker8 = new google.maps.Marker({
           position: myLatLng[7],
           map: map,
@@ -186,11 +186,11 @@
         marker8.addListener('click', function() {
             infowindow8.open(map, marker8);
           });
-          var contentString8= '<p><b>03:15</b>, Saw a few guys man-handling a woman</p>';
+          var contentString8= '<p><b>Location & Time: </b>Albert St., 8:30PM</br><b>Description:</b>Highly unsafe, dark alleys, dim-lit</br><b>SafeRating: </b> 3/10 </p>';
           var infowindow8 = new google.maps.InfoWindow({
             content: contentString8
         });
-
+ 
         var marker9 = new google.maps.Marker({
           position: myLatLng[8],
           map: map,
@@ -199,11 +199,11 @@
         marker9.addListener('click', function() {
             infowindow9.open(map, marker9);
           });
-          var contentString9= '<p><b>00:56</b>, Got mugged when going back home</p>';
+          var contentString9= '<p><b>Location & Time: </b>CIF, 1:20AM</br><b>Description:</b>Deserted, not a great place for hangout late at night</br><b>SafeRating: </b> 5/10 </p>';
           var infowindow9 = new google.maps.InfoWindow({
             content: contentString9
         });
-
+ 
         var marker10 = new google.maps.Marker({
           position: myLatLng[9],
           map: map,
@@ -212,11 +212,11 @@
         marker10.addListener('click', function() {
             infowindow10.open(map, marker10);
           });
-          var contentString10= '<p><b>22:40</b>, Got stalked by a stranger.<br /> No police station nearby</p>';
+          var contentString10= '<p><b>Location & Time: </b>BC Mathews Hall, 10:30AM</br><b>Description:</b>Reasons not specified</br><b>SafeRating: </b> 7/10 </p>';
           var infowindow10 = new google.maps.InfoWindow({
             content: contentString10
         });
-
+ 
         var marker11 = new google.maps.Marker({
           position: myLatLng[10],
           map: map,
@@ -225,11 +225,11 @@
         marker11.addListener('click', function() {
             infowindow11.open(map, marker11);
           });
-          var contentString11= '<p><b>23:20</b>, Heard a gunshot</p>';
+          var contentString11= '<p><b>Location & Time: </b>M3, 11:30PM</br><b>Description:</b>Gunshot heard</br><b>SafeRating: </b> 2/10 </p>';
           var infowindow11 = new google.maps.InfoWindow({
             content: contentString11
         });
-
+ 
         var marker12 = new google.maps.Marker({
           position: myLatLng[11],
           map: map,
@@ -238,11 +238,11 @@
         marker12.addListener('click', function() {
             infowindow12.open(map, marker12);
           });
-          var contentString12= '<p><b>02:30</b>, got mugged at night</p>';
+          var contentString12= '<p><b>Location & Time: </b>M3/DC, 10:30PM</br><b>Description:</b>Lot of reports of mugging</br><b>SafeRating: </b> 2/10 </p>';
           var infowindow12 = new google.maps.InfoWindow({
             content: contentString12
         });
-
+ 
         var marker13 = new google.maps.Marker({
           position: myLatLng[12],
           map: map,
@@ -251,11 +251,11 @@
         marker13.addListener('click', function() {
             infowindow13.open(map, marker13);
           });
-          var contentString13= '<p><b></b></p>';
+          var contentString13= '<p><b>Location & Time: </b>STC, 11:30PM</br><b>Description:</b>Reasons not specified</br><b>SafeRating: </b> 7/10 </p>';
           var infowindow13 = new google.maps.InfoWindow({
             content: contentString13
         });
-
+ 
         var marker14 = new google.maps.Marker({
           position: myLatLng[13],
           map: map,
@@ -264,11 +264,11 @@
         marker14.addListener('click', function() {
             infowindow14.open(map, marker14);
           });
-          var contentString14= '<p><b>20:50</b>, Got eveteased and catcalled<br />No one around to help.</p>';
+          var contentString14= '<p><b>Location & Time: </b>ML, 8:30PM</br><b>Description:</b>Catcalle dwith no one to help</br><b>SafeRating: </b> 2/10 </p>';
           var infowindow14 = new google.maps.InfoWindow({
             content: contentString14
         });
-
+ 
         var marker15 = new google.maps.Marker({
           position: myLatLng[14],
           map: map,
@@ -277,11 +277,11 @@
         marker15.addListener('click', function() {
             infowindow15.open(map, marker15);
           });
-          var contentString15= '<p><b>00:20</b>, Racially abused</p>';
+          var contentString15= '<p><b>Location & Time: </b>RCH, 10:30PM</br><b>Description:</b> Beaten up by a couple of strangers </br><b>SafeRating: </b> 2/10 </p>';
           var infowindow15 = new google.maps.InfoWindow({
             content: contentString15
         });
-
+ 
         var marker16 = new google.maps.Marker({
           position: myLatLng[15],
           map: map,
@@ -290,11 +290,11 @@
         marker16.addListener('click', function() {
             infowindow16.open(map, marker16);
           });
-          var contentString16= '<p><b>23:30</b>,Stalked and eveteased</p>';
+          var contentString16= '<p><b>Location & Time: </b>Hagey, 12:30PM</br><b>Description:</b>High reports of accidents late at night, hence avoid.</br><b>SafeRating: </b> 5/10 </p>';
           var infowindow16 = new google.maps.InfoWindow({
             content: contentString16
         });
-
+ 
         var marker17 = new google.maps.Marker({
           position: myLatLng[16],
           map: map,
@@ -303,11 +303,11 @@
         marker17.addListener('click', function() {
             infowindow17.open(map, marker17);
           });
-          var contentString17= '<p><b>17</b>, Lonely and dimlit</p>';
+          var contentString17= '<p><b>Location & Time: </b>TC, 1:30AM</br><b>Description:</b>Very dim-lit, spooky feel; Changing the street lights would be beneficial </br><b>SafeRating: </b> 4/10 </p>';
           var infowindow17 = new google.maps.InfoWindow({
             content: contentString17
         });
-
+ 
         var marker18 = new google.maps.Marker({
           position: myLatLng[17],
           map: map,
@@ -316,11 +316,11 @@
         marker18.addListener('click', function() {
             infowindow18.open(map, marker18);
           });
-          var contentString18= '<p><b>18</b>, very sparsely populated</p>';
+          var contentString18= '<p><b>Location & Time: </b>DWE, 10:30PM</br><b>Description:</b> Sparsely populated, better avoid at night</br><b>SafeRating: </b> 2/10 </p>';;
           var infowindow18 = new google.maps.InfoWindow({
             content: contentString18
         });
-
+ 
         var marker19 = new google.maps.Marker({
           position: myLatLng[18],
           map: map,
@@ -329,21 +329,21 @@
         marker19.addListener('click', function() {
             infowindow19.open(map, marker19);
           });
-          var contentString19= '<p><b>19</b></p>';
+          var contentString19= '<p><b>Location & Time: </b>UWP, 6:00AM </br><b>Description:</b> Reasons not specfied</br><b>SafeRating: </b> 6/10 </p>';
           var infowindow19 = new google.maps.InfoWindow({
             content: contentString19
         });
-
+ 
         var marker20 = new google.maps.Marker({
           position: myLatLng[19],
           map: map,
-          title: 'Overcrowding: Pickpocket'
+          title: 'Unsafe'
         });
-
+ 
           marker20.addListener('click', function() {
-            infowindow20.open(map, marker20);
+             infowindow20.open(map, marker20);
           });
-          var contentString20= '<p><b>20</b>, is safe to a certain extent </br> in the late hours of the night</p>';
+          var contentString20= '<p><b>Location & Time: </b>Waterloo Park, 12:30AM</br><b>Description:</b>Highly unsafe to walk alone </br><b>SafeRating: </b> 5/10 </p>';
           var infowindow20 = new google.maps.InfoWindow({
             content: contentString20
         });
@@ -414,7 +414,7 @@
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=visualization&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxpaEY6bhocd_LhUlaPcCtmlelwnzSIXU&libraries=visualization&callback=initMap">
   </script>
 </body>
 </html>
