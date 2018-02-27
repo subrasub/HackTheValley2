@@ -57,6 +57,7 @@
 
       var map, heatmap, latitude, longitude;
 
+      //List of Objects, using the latitude and the longitude of the 20 locations
       var myLatLng = [
                       {lat:43.471459, lng: -80.546995},
                       {lat:43.470419, lng: -80.552059},
@@ -80,13 +81,15 @@
                       {lat:43.469129, lng: -80.535687}
                       ];
 
+//Initializing the map
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: {lat: 43.470039, lng: -80.544243},
           mapTypeId: 'satellite'
         });
-
+      
+//Creating markers for each location and a popup box
          var marker1 = new google.maps.Marker({
           position: myLatLng[0],
           map: map,
@@ -347,7 +350,7 @@
           var infowindow20 = new google.maps.InfoWindow({
             content: contentString20
         });
-
+//Creating a heatmap of the points using the latitude and longitude data
         heatmap = new google.maps.visualization.HeatmapLayer({
           data: getPoints(),
           map: map
@@ -378,7 +381,8 @@
         ]
         heatmap.set('gradient', heatmap.get('gradient') ? null : gradient);
       }
-
+      
+//Options to change the opacity of the heatmap for better viewing
       function changeRadius() {
         heatmap.set('radius', heatmap.get('radius') ? null : 75);
       }
@@ -387,7 +391,8 @@
         heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
       }
 
-      
+//List of the the latitude and the longitude of the points on the map
+//Inputting the data usingi in-built functions      
       function getPoints() {
         return [
         new google.maps.LatLng(43.471459, -80.546995),
